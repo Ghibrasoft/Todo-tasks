@@ -1,0 +1,91 @@
+@import '../variables';
+
+.singleTodo_form {
+    position: relative;
+    border: 1px solid $bg-color-alt;
+    border-radius: 5px;
+    background-color: $bg-color-alt;
+    transition: $transition;
+
+    &:hover {
+        border: 1px solid #fff;
+        background-color: $bg-color;
+        transition: $transition;
+    }
+
+    .singleTodoform_div {
+        margin: .2rem;
+        height: 100%;
+        padding-bottom: 1.5rem;
+
+        &:hover {
+            transition: 0s ease;
+            color: #fff;
+
+            .span_btn {
+                color: #000;
+                opacity: 1;
+                transform: translateY(0px);
+                transition: $transition;
+            }
+        }
+
+        .edit_input {
+            outline: none;
+            border: none;
+        }
+
+        .span_btn {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: $transition;
+        }
+    }
+
+    .btns_div {
+        display: flex;
+        gap: .5rem;
+        margin-top: 1rem;
+        position: absolute;
+        bottom: 0;
+
+        .span_btn {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: .1rem .3rem;
+            font-size: 1.2rem;
+        }
+
+        .edit {
+            &:hover {
+                background-color: $edit-btn-color;
+                color: #fff;
+            }
+        }
+
+        .delete {
+            &:hover {
+                background-color: #DC143C;
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+/* ========== media queries (large devices) ========== */
+@media screen and (max-width: 600px) {
+    .singleTodo_form {
+        padding-bottom: 2rem;
+    }
+}
+
+/* ========== media queries (small devices) ========== */
+@media screen and (max-width: 1024px) {
+    .singleTodo_form {
+        padding-bottom: 2rem;
+    }
+}

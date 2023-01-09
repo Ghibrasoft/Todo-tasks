@@ -1,0 +1,47 @@
+@import '../variables';
+
+::placeholder {
+    color: #fff;
+}
+
+.search_bar_div {
+    border-bottom: 1px solid #fff;
+
+    .search_bar {
+        margin-top: 1rem;
+        color: #fff;
+        background-color: $bg-color;
+        font-family: $font-body;
+        font-style: italic;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: .3rem;
+    }
+}
+
+
+.showTasks_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    word-break: break-all;
+    gap: 1rem;
+    padding: .3rem;
+    border-top: 2px solid #fff;
+    width: 100%;
+    margin-top: 1rem;
+    transition: $transition;
+}
+
+@media screen and (max-width: 1024px) {
+    .showTasks_div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .showTasks_div {
+        grid-template-columns: 1fr;
+    }
+}

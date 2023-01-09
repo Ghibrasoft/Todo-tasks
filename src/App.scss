@@ -1,0 +1,59 @@
+@import "./styles/variables";
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bg-color;
+    height: 100vh;
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin-top: 5rem;
+
+        .header_h1 {
+            font-family: $font-header;
+            font-size: 3.5rem;
+            color: #fff;
+        }
+
+        .input_div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+        }
+    }
+}
+
+/* ========== media queries (large devices) ========== */
+@media screen and (max-width: 1024px) {
+    section {
+
+        .container {
+            width: 100%;
+
+            .input_div {
+                width: 70%;
+            }
+        }
+    }
+}
+
+/* ========== media queries (small devices) ========== */
+@media screen and (max-width: 600px) {
+    section {
+
+        .container {
+            width: 100%;
+
+            .input_div {
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.singleTodo_form {
+  position: relative;
+  border: 1px solid #00BFFF;
+  border-radius: 5px;
+  background-color: #00BFFF;
+  transition: 0.3s ease;
+}
+.singleTodo_form:hover {
+  border: 1px solid #fff;
+  background-color: #1E90FF;
+  transition: 0.3s ease;
+}
+.singleTodo_form .singleTodoform_div {
+  margin: 0.2rem;
+  height: 100%;
+  padding-bottom: 1.5rem;
+}
+.singleTodo_form .singleTodoform_div:hover {
+  transition: 0s ease;
+  color: #fff;
+}
+.singleTodo_form .singleTodoform_div:hover .span_btn {
+  color: #000;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.3s ease;
+}
+.singleTodo_form .singleTodoform_div .edit_input {
+  outline: none;
+  border: none;
+}
+.singleTodo_form .singleTodoform_div .span_btn {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+}
+.singleTodo_form .btns_div {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+.singleTodo_form .btns_div .span_btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.1rem 0.3rem;
+  font-size: 1.2rem;
+}
+.singleTodo_form .btns_div .edit:hover {
+  background-color: #FFD700;
+  color: #fff;
+}
+.singleTodo_form .btns_div .delete:hover {
+  background-color: #DC143C;
+  color: #fff;
+}
+
+/* ========== media queries (large devices) ========== */
+@media screen and (max-width: 600px) {
+  .singleTodo_form {
+    padding-bottom: 2rem;
+  }
+}
+/* ========== media queries (small devices) ========== */
+@media screen and (max-width: 1024px) {
+  .singleTodo_form {
+    padding-bottom: 2rem;
+  }
+}/*# sourceMappingURL=SingleTodo.css.map */

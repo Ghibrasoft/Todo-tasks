@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital@0;1&display=swap");
+@import '../src/styles/variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: $font-body;
+}
+
+li {
+  list-style: none;
+}
+@import './App.scss';
+@import './styles/inputField/InputField.scss';
+@import './styles/singleTodo/SingleTodo.scss';

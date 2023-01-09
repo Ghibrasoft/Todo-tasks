@@ -1,0 +1,67 @@
+.taskify_form {
+  margin-top: 1rem;
+  width: 100%;
+}
+.taskify_form .taskify_div {
+  position: relative;
+}
+.taskify_form .taskify_div .task_input {
+  border: none;
+  border-radius: 1rem;
+  background-color: #00BFFF;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 0.8rem;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.taskify_form .taskify_div .task_input:focus {
+  background-color: #fff;
+}
+.taskify_form .taskify_div .task_input:focus ~ .add_task_btn,
+.taskify_form .taskify_div .task_input:focus ~ .clear_btn {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.taskify_form .taskify_div .add_task_btn,
+.taskify_form .taskify_div .clear_btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 0.3rem;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: calc(100% - 120px);
+  top: calc(50% - 25px);
+  margin-right: 0.5rem;
+  color: #fff;
+  background: #1E90FF;
+  transition: 0.3s ease;
+  box-shadow: 0 0 5px #000;
+  opacity: 0;
+}
+.taskify_form .taskify_div .add_task_btn:hover,
+.taskify_form .taskify_div .clear_btn:hover {
+  color: #000;
+  background: #00FF7F;
+  transition: 0.3s ease;
+}
+.taskify_form .taskify_div .add_task_btn:active,
+.taskify_form .taskify_div .clear_btn:active {
+  box-shadow: inset 0 0 5px #000;
+}
+.taskify_form .taskify_div .clear_btn {
+  font-size: 1.5rem;
+  left: calc(100% - 60px);
+  top: calc(50% - 25px);
+}
+.taskify_form .taskify_div .clear_btn:hover {
+  color: #fff;
+  background-color: #DC143C;
+}/*# sourceMappingURL=InputField.css.map */
